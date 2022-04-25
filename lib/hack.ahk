@@ -1,4 +1,4 @@
-﻿ForceForward(v) {
+ForceForward(v) {
 	csgo.write(client + dwForceForward, v, "int")
 }
 
@@ -85,9 +85,9 @@ autoStrafe() {
 	}
 
 	back := GetKeyState("s", "P")
-    ,forward := GetKeyState("w", "P")
-    ,right := GetKeyState("d", "P")
-    ,left := GetKeyState("a", "P")
+	,forward := GetKeyState("w", "P")
+	,right := GetKeyState("d", "P")
+	,left := GetKeyState("a", "P")
 
 	if (back) {
 		angle := -180
