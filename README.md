@@ -3,4 +3,5 @@
 
 
 ## video
-![Imgur image](https://imgur.com/a/QznDZyl.gif)
+<img src="https://imgur.com/a/QznDZyl.gif"/>
+[Imgur image](https://imgur.com/a/QznDZyl.gif)
