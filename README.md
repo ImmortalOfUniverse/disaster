@@ -3,4 +3,4 @@
 
 
 ## video
-![image](https://imgur.com/a/QznDZyl)
+![Imgur image](https://imgur.com/a/QznDZyl)
