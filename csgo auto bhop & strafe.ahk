@@ -63,7 +63,6 @@ global client
 global engine
 global clientState
 global vstdlib
-;global materialsystem := csgo.getModuleBaseAddress("materialsystem.dll")
 global Cvar
 global InGame
 global LocalPlayer
@@ -81,17 +80,12 @@ Cvar := new ConvarManager()
 global cl_forwardspeed := Cvar.FindFast("cl_forwardspeed")
 global cl_sidespeed := Cvar.FindFast("cl_sidespeed")
 
-
-
-cl_showpos := Cvar.FindFast("cl_showpos")
-cl_showpos.SetInt(1)
-
-
-;DllCall("QueryPerformanceFrequency", "Int64*", freq)
+;show pos
+;cl_showpos := Cvar.FindFast("cl_showpos")
+;cl_showpos.SetInt(1)
 
 
 Loop {
-	;DllCall("QueryPerformanceCounter", "Int64*", before)
 	InGame := IsInGame()
 	,LocalPlayer := new c_Entity(GetLocalPlayer(), 2)
 
@@ -102,8 +96,6 @@ Loop {
 		autoStrafe()
 
 	}
-	;DllCall("QueryPerformanceCounter", "Int64*", after)
-	;msgbox % LocalPlayer.entity . " " (after-before)/freq*1000
 	;sleep, 1
 }
 
@@ -117,15 +109,5 @@ ForceForward(0)
 ForceRight(0)
 exitApp
 return
-
-
-
-
-
-
-
-
-
-
 
 
