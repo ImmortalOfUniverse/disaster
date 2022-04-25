@@ -1,4 +1,4 @@
-﻿;#Include helpers.ahk
+;#Include helpers.ahk ;debug
 ;#SingleInstance, Force ;debug
 
 class Vector {
@@ -6,9 +6,6 @@ class Vector {
 		this.x  := array[1]
 		,this.y := array[2]
 		,this.z := array[3] = "" ? 0 : array[3]
-		;,this.pitch := array[1]
-		;,this.yaw   := array[2]
-		;,this.roll  := array[3] = "" ? 0 : array[3]
 	}
 
 	static up      := new Vector([ 0,  0,  1])
@@ -18,9 +15,6 @@ class Vector {
 	static left    := new Vector([ 0,  1,  0])
 	static right   := new Vector([ 0, -1,  0])
 
-	test_func() {
-		return Vector.x
-	}
 
 	sub(v) {
 		return new Vector([this.x-v.x, this.y-v.y, this.z-v.z])
@@ -70,15 +64,3 @@ class Vector {
 fromAngle2D(angle) {
     return new Vector([cos(deg2rad(angle)), sin(deg2rad(angle)), 0])
 }
-
-test2() {
-	return Vector.x
-}
-
-
-/*
-test_v := new Vector([3, 4, 5])
-lmao := new Vector([0, 0, 0])
-v2test := new Vector([3, 4])
-*/
-;msgbox % v2test.z ;test_v.distTo(lmao)
