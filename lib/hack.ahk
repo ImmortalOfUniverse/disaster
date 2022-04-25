@@ -89,30 +89,30 @@ autoStrafe() {
     ,right := GetKeyState("d", "P")
     ,left := GetKeyState("a", "P")
 
-    if (back) {
-        angle := -180
-        if (left)
-            angle -= 45
-        else if (right)
-            angle += 45
-    }
-    else if (left) {
-        angle := 90
-        if (back)
-            angle += 45
-        else if (forward)
-            angle -= 45
-    }
-    else if (right) {
-        angle := -90
-        if (back)
-            angle -= 45
-        else if (forward)
-            angle += 45
-    }
-    else {
-        angle := 0
-    }
+	if (back) {
+		angle := -180
+		if (left)
+			angle -= 45
+		else if (right)
+			angle += 45
+	}
+	else if (left) {
+		angle := 90
+		if (back)
+			angle += 45
+		else if (forward)
+			angle -= 45
+	}
+	else if (right) {
+		angle := -90
+		if (back)
+			angle -= 45
+		else if (forward)
+			angle += 45
+	}
+	else {
+		angle := 0
+	}
 
 	pDelta := perfectDelta(speed)
 
