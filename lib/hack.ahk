@@ -82,6 +82,8 @@ autoStrafe() {
 		ForceRight(1)
 		ForceLeft(0) ;Make sure pressing movelefe doesn't affect auto strafe
 		ForceBackward(0) ;Make sure pressing back doesn't affect auto strafe
+	} else {
+		return
 	}
 
 	back := GetKeyState("s", "P")
